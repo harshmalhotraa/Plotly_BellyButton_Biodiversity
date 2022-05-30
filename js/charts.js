@@ -89,15 +89,13 @@ function buildCharts(sample) {
 
     //##########################################################################
     //  Create the trace for the bar chart. 
-    var barData = [
-      {
-        x: sampleVals,
-        y: otuIDs,
+    var barData = {
+        x: xticks,
+        y: yticks,
         type: "bar",
         orientation: "h",
         text: labels,
-      }
-    ];
+      };
 
     //  Create the layout for the bar chart. 
     var barLayout = {
